@@ -2,13 +2,10 @@
 
 #area for library imports
 import pyttsx3 as pt
-from gtts import gTTS
-from io import BytesIO
 
 
 #
-
-""" def speechEngine(string):
+def speechEngine(string):
         # initialising text-to-speech engine.
         engine = pt.init() # create object engine
 
@@ -31,9 +28,4 @@ from io import BytesIO
 
         engine.say(string)
         engine.runAndWait()
-        engine.stop() """
-
-def speechEngine(string):
-    mp3_fp = BytesIO()
-    tts = gTTS(string, lang='en')
-    tts.write_to_fp(mp3_fp)
+        engine.stop()
